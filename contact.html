@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body style="margin: 0;">
+        <div id="container">
+            <div id="header">
+                <div id="nameheader">
+                    <h1><a href="index.html">Jackie Ho</a></h1>  
+                </div>
+                <div class="nav">
+                    <a href="index.html">Work</a>
+                    <a href="other.html">Other</a>
+                    <a href="contact.html">Info</a>
+                </div>
+            </div>
+            <div id="headerspacer">
+                &nbsp;
+            </div>
+            <div id="content">
+                <div id="main">
+                    <div id="about-text-box">
+                        <div id="about-text">
+                            Hi, I'm Jackie,
+                            <br>
+                            an architectural designer,
+                        </div>
+                        <h4 id="about-text">
+                            based in 
+                            <span style="text-decoration: line-through;">Hong Kong</span>
+                            the Netherlands,
+                            <br>
+                            currently studying at TU Delft.
+                        </h4>
+                    </div>
+
+                    <div class="row" style="margin-top: 200px; margin-bottom: 200px;">
+                        <div class="column">
+                            <h1>Get in touch!</h1>
+                            <form id="contact-form" class="form-horizontal" role="form">
+           
+                                <div class="form-group">
+                                  <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                                  </div>
+                                </div>
+                          
+                                <div class="form-group">
+                                  <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                                  </div>
+                                </div>
+                          
+                                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                                
+                                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                  <div class="alt-send-button">
+                                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                                  </div>
+                                
+                                </button>  
+                            </form>
+                        </div>
+                        <div class="column-2">
+                            <h3>or send me an email at</h3>
+                            <i class="fa fa-envelope fa-2x"><span class="contact-text gmail">
+                                <a href="mailto:#" title="Send me an email">jackieeeeho@gmail.com</a>
+                            </span></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomnav">
+                <a href="index.html">&larr;</a>
+                <a href="index.html">Back to Projects</a>
+                <a href="contact.html" class="split">Contact Me</a>
+            </div>
+            <div id="footer">
+                <h5>Copyright &copy Jackie Ho</h5>
+            </div>        
+        </div>
+    <script src="scripts/contact-form.js"></script>
+    </body>
+</html>
