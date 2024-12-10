@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="scripts/simple-lightbox.css" rel="stylesheet" />
 </head>
 <body style="margin: 0;">
     <div id="container">
@@ -29,7 +31,7 @@
             <div class="row">
                 <div id="descript">
                     <p><strong>Shadow Play: an Inter-generational Playspace</strong></p>
-                    <p><em>Prosperous Gardens, Yau Ma Tei, HK</em></p>
+                    <p><em>Prosperous Gardens, Yau Ma Tei, Hong Kong</em></p>
                     <p>07-10 / 2019</p>
                     <p>Competition: The Intergenerational Play Space Design Competition organised by the Jockey Club Design Institute for Social Innovation (JCDISI) with the Hong Kong Housing Society (HKHS)</p>
                     <p>In collaboration with 
@@ -37,19 +39,28 @@
                     </p>
                 </div>
                 <div id="introtext">
+                    <p>The competition brief required a master plan for a playscape/ spatial design that creates an inviting environment for elderly users and promotes intergenerational play and interaction. We also needed to select and/or design creative, safe, and easy-to-maintain play equipment as well as fitness equipment to encourage physical excerise of elderly users. The site would be the public space of the housing estate Prosperous Gardens in Yau Ma Tei. </p>
                     <p>When visiting Prosperous Gardens, we noticed that the majority of elderly users preferred to sit in the spaces under podium as they were well-shaded. This meant that there was limited intergenerational interaction as the children preferred to stay in the playground under the sunshine. Therefore, we wanted to tackle this issue of lack of shaded space and suitable facilities to promote intergenerational interaction. </p>
                     <p>Our concept consisted of 'shadow play' structures which are circular canopies sitting on top or extending from poles. They are inspired by German playground design and manufacturer Richter Spielgeräte. Shadow play makes use of projecting properties of translucent materials under sunlight to make shadows of various shapes and colors, and these canopies suspended on poles can be rotated and moved vertically by users to overlap and enlarge shadows, hence the 'shadow play'. This colorful and outstanding element stimulates children's attention and creates a playful atmosphere. These canopies also offer a more practical aspect by moving the shade to appropriate areas like over seating for comfort.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="column">
-                    <img src="images/playspace_gif2.GIF" alt="" width="80%">
-                </div>
-                <div class="column-2">
-                    <img src="images/playspace_011.jpg" alt="" width="100%">
-                </div>
+            <div id="main">
+                <img src="images/playspace_gif2.GIF" alt="" width="50%">
+                <h3>Shadow Play = Shading + Play</h3>
+                <div class="gallery">
+                    <div class="clearfix">
+                        <a href="images/playspace_spread.png">
+                            <img src="images/playspace_spread.png" alt="" title="" width="100%">
+                        </a>
+                        <a href="images/playspace_spread2.png">
+                            <img src="images/playspace_spread2.png" alt="" title="" width="100%">
+                        </a>
+                        <a href="images/playspace_015.jpg">
+                            <img src="images/playspace_015.jpg" alt="" title="" width="100%" style="margin-top: 50px;">
+                        </a>
+                    </div>    
+                </div>   
             </div>
-
         </div>
         
         <div class="bottomnav">
@@ -61,5 +72,18 @@
             <h5>Copyright &copy Jackie Ho</h5>
         </div>
     </div>
+
+    <script src="scripts/simple-lightbox.jquery.js"></script>
+    <script>
+        var gallery = $('.gallery a').simpleLightbox({
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $(".sl-image img").click(function(){
+                alert("hello");
+            })
+        });
+    </script>
 </body>
 </html>
