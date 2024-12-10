@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="scripts/copytoclipboard.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body style="margin: 0;">
         <div id="container">
@@ -31,47 +35,28 @@
                         </div>
                         <h4 id="about-text">
                             based in 
-                            <span style="text-decoration: line-through;">Hong Kong</span>
-                            the Netherlands,
+                            <span style="text-decoration: line-through;">the Netherlands</span>
                             <br>
-                            currently studying at TU Delft.
+                            Hong Kong, and
+                            <br>
+                            recent graduate of TU Delft.
                         </h4>
                     </div>
+                    <img src="images/portrait.jpg" style="float: right; padding-top: 100px;
+                    padding-bottom: 100px;" width="30%">
 
-                    <div class="row" style="margin-top: 200px; margin-bottom: 200px;">
-                        <div class="column">
-                            <h1>Get in touch!</h1>
-                            <form id="contact-form" class="form-horizontal" role="form">
-           
-                                <div class="form-group">
-                                  <div class="col-sm-12">
-                                    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-                                  </div>
-                                </div>
-                          
-                                <div class="form-group">
-                                  <div class="col-sm-12">
-                                    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-                                  </div>
-                                </div>
-                          
-                                <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-                                
-                                <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                                  <div class="alt-send-button">
-                                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                                  </div>
-                                
-                                </button>  
-                            </form>
-                        </div>
-                        <div class="column-2">
-                            <h3>or send me an email at</h3>
-                            <i class="fa fa-envelope fa-2x"><span class="contact-text gmail">
-                                <a href="mailto:#" title="Send me an email">jackieeeeho@gmail.com</a>
-                            </span></i>
-                        </div>
-                    </div>
+                    <div class="clearfix"></div>
+
+                    <h2 style="margin-top: 50px;">If you would like my full CV or just a quick chat,</h2>
+                    <h2 style="margin-bottom: 20px;">please reach out to me via</h2>
+                    <button class="copy-button" id="copyEmailButton">
+                        jackieeho@yahoo.com
+                        <i class="fa fa-copy" style="margin-left: 10px;"></i>
+                    </button>
+                    <h2 style="margin-top: 50px;">or at</h2>
+                    <a href="www.linkedin.com/in/jackie-chak-kei-ho-707951338" class="linkedin-button">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
                 </div>
             </div>
             <div class="bottomnav">
@@ -84,5 +69,17 @@
             </div>        
         </div>
     <script src="scripts/contact-form.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#copyEmailButton').click(function() {
+                const email = $(this).text().trim();
+                navigator.clipboard.writeText(email).then(function() {
+                    alert('Email has been copied!');
+                }, function(err) {
+                    console.error('Could not copy text: ', err);
+                });
+            });
+        });
+    </script>
     </body>
 </html>
