@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="scripts/simple-lightbox.css" rel="stylesheet" />
+</head>
+<body style="margin: 0;">
+    <div id="container">
+        <div id="header">
+            <div id="nameheader">
+                <h1><a href="index.html">Jackie Ho</a></h1>  
+            </div>
+            <div class="nav">
+                <a href="index.html">Work</a>
+                <a href="other.html">Other</a>
+                <a href="contact.html">Info</a>
+            </div>
+        </div>
+        <div id="headerspacer">
+            &nbsp;
+        </div>
+        <div class="keyimage">
+            <img src="images/kagome_1.png" alt="r1" width="100%">
+            <div class="keyimagetitle"><strong>Construction of 1:2 Kagome Weave Model</strong></div>
+        </div>
+        <div id="content">
+            <div class="row">
+                <div id="descript">
+                    <p><strong>Kagome-Weave Bamboo Pavilion</strong></p>
+                    <p><em>Interior Installation @ 1:2 scale</em></p>
+                    <p>01-05/2021</p>
+                    <p>Bacherlor's Building Technology Elective Project</p>
+                    <i>In collaboration with Coco Tang, Henrik Sit, Zoe So, Jenny Chung, Beryl Wong</i>
+                </div>
+                <div id="introtext">
+                    <p>Kagome weaving is a tri-axial material interlacing system usually done with bamboo strips. Originally a traditional Japanese handcraft, kagome weaving can be extended in its application beyond the traditional domain of basket-making and be transferred to producing contemporary architecture. After a series of workshops weaving more simple forms, we came to understand the technique and ‘language’ of kagome weaving to control and design forms of more complicated curvatures. </p>
+                    <p>This led to the final project of the design and fabrication of a 1:2 scale bamboo pavilion. Through evidence-based design involving both digital and hands-on experimentation, our final design was akin to an enneper surface with three openings to the pavilion. We explored the intrinsic relationship between fabrication,  material, craftmanshand technology, and properties of bamboo.</p>
+                    <img src="images/kagome3.png" alt="" width="100%">
+                </div>
+            </div>
+            <div id="main">
+                <div class="gallery">
+                    <a href="images/kagome.png">
+                        <img src="images/kagome.png" alt="" title="" width="100%" style="margin-bottom: 50px;">
+                    </a>
+                    <a href="images/kagome2.png">
+                        <img src="images/kagome2.png" alt="" title="" width="100%" style="margin-bottom: 50px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bottomnav">
+            <a href="index.html">&larr;</a>
+            <a href="index.html">Back to Projects</a>
+            <a href="contact.html" class="split">Contact Me</a>
+        </div>
+        <div id="footer">
+            <h5>Copyright &copy Jackie Ho</h5>
+        </div>
+    </div>
+    <script src="scripts/simple-lightbox.jquery.js"></script>
+    <script>
+        var gallery = $('.gallery a').simpleLightbox({
+        });
+        
+    </script>
+</body>
+</html>
