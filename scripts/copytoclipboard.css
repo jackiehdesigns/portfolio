@@ -1,0 +1,30 @@
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 2px;
+  border-color: slategray;
+  background-color: white;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: sitka;
+}
+
+.copy-button:hover {
+  background-color: rgb(240, 240, 240);
+  transform: scale(0.95);
+}
+
+.copy-icon {
+  margin-left: 10px;
+}
+
+
+.linkedin-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 48px;
+  color: black;
+}
